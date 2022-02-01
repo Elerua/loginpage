@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "95d3bd28-afde-483d-91a4-79ed5bf1186f": {
+      "ProjectGuid": "95d3bd28-afde-483d-91a4-79ed5bf1186f",
+      "DisplayName": "LoginApplication",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

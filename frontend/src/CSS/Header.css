@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	justify-content: flex-start;
+	height: 10vh;
+    background-color: #282c34;
+}
+
+.header-title {
+	font-size: calc(3vw + 5px);
+	width: auto;
+	height: 8vh;
+	max-height: 100%;
+	margin-left: 3%;
+    color: #ffffff;
+}
