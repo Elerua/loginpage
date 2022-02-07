@@ -1,34 +1,47 @@
 .home {
-	background-color: red;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-.title {
-	display: flex;
-	justify-content: center;
-	background-color: blue;
-	height: 35%;
-	color: #ffffff;
-	font-size: 10em;
-}
-.subtitle {
-	background-color: yellow;
-	height: 20%;
-	color: #ffffff;
-	font-size: 3em;
-}
-.button-group {
-	background-color: green;
 	display: flex;
 	flex-direction: row;
-	height: 45%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+/* Right */
+.right {
+	display: flex;
+	width: 50%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
 }
 .login {
 	background-color: purple;
+	border-radius: 20px;
+	margin: 1%;
 	width: 50%;
+}
+.login :hover {
+	transform: scale(2);
 }
 .signup {
 	background-color: brown;
+	border-radius: 20px;
+	margin: 1%;
 	width: 50%;
+}
+
+/*Left*/
+.left {
+	display: flex;
+	flex-direction: column;
+	margin: 10vh;
+	width: 50%;
+}
+.left-title {
+	font-size: 4em;
+	font-display: bold;
+	margin-bottom: 8%;
+}
+.left-text {
+	font-size: 2em;
+	margin: 10%;
 }
