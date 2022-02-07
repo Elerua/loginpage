@@ -14,16 +14,23 @@
 	margin-right: 2%;
 }
 .login {
-	background-color: purple;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #8D89A6;
 	border-radius: 20px;
 	margin: 1%;
 	width: 50%;
 }
-.login :hover {
-	transform: scale(2);
+.explication {
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .signup {
-	background-color: brown;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #BFABCB;
 	border-radius: 20px;
 	margin: 1%;
 	width: 50%;
@@ -39,9 +46,9 @@
 .left-title {
 	font-size: 4em;
 	font-display: bold;
-	margin-bottom: 8%;
+	margin-top: 5%;
 }
 .left-text {
 	font-size: 2em;
-	margin: 10%;
+	margin: 15%;
 }
