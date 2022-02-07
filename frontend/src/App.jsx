@@ -1,4 +1,6 @@
 import { Outlet } from 'react-router-dom';
+import axios from 'axios';
+import React, { useState } from 'react';
 
 //CSS
 import './App.css';
@@ -7,6 +9,9 @@ import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
+//Middle ware si utilisateur connecté
+import { AuthContext } from './helpers/AuthContext';
+
 const App = () => {
 	return (
 		<div className="App">
@@ -14,9 +19,9 @@ const App = () => {
 			<div className="App-body">
 				<Outlet />
 			</div>
-      <Footer className="App-Footer Centered" />
+			<Footer className="App-Footer Centered" />
 		</div>
 	);
-}
+};
 
 export default App;

@@ -1,0 +1,9 @@
+.LoggedIn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.buttonLog {
+	margin-top: 2%;
+}

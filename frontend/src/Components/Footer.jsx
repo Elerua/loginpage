@@ -7,7 +7,7 @@ const Footer = ({ className }) => {
   return (
     <div className={`${className}`}>
       <div className="Footer">
-        Livrable sur pour SpimedAI
+        Livrable sur ReactJS / .NET / SQLite pour SpimedAI
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import App from './App';
 import Home from './Pages/Home';
 
 import reportWebVitals from './reportWebVitals';
+import LoggedIn from './Pages/LoggedIn';
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
 			<Routes>
 				<Route path="/" element={<App />}>
 					<Route index element={<Home />} />
+					<Route path="/user/:id" index element={<LoggedIn />}/>
 				</Route>
 			</Routes>
 		</Router>

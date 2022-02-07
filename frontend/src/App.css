@@ -17,16 +17,14 @@
 .App-header {
   height: 10%;
   background-color: #282c34;
-  color: #4b4c4d;
 }
 
 .App-body {
   height: 85%;
-  background-color: #cccccc;
+  background-color: #ffffff;
 }
 
 .App-Footer {
   height: 5%;
   background-color: #ffffff;
-  color: #4b4c4d;
 }
