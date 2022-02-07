@@ -35,11 +35,11 @@ public class UserService : IUserService
 
     public AuthenticateResponse Authenticate(AuthenticateRequest model)
     {
-        var user = _context.Users.SingleOrDefault(x => x.Name == model.Name);
+        var user = _context.Users.SingleOrDefault(x => x.Mail == model.Mail);
 
         // validate
         if (user == null || !BCrypt.Verify(model.Password, user.PasswordHash))
-            throw new AppException("Nom ou mot de passe incorrect");
+            throw new AppException("Mail ou mot de passe incorrect");
 
         // authentication successful
         var response = _mapper.Map<AuthenticateResponse>(user);
@@ -60,8 +60,8 @@ public class UserService : IUserService
     public void Register(RegisterRequest model)
     {
         // validate
-        if (_context.Users.Any(x => x.Name == model.Name))
-            throw new AppException("Nom d'utilisateur '" + model.Name + "' déjà utilisé !");
+        if (_context.Users.Any(x => x.Mail == model.Mail))
+            throw new AppException("Adresse mail '" + model.Mail + "' déjà utilisée !");
 
         // map model to new user object
         var user = _mapper.Map<User>(model);
@@ -79,8 +79,8 @@ public class UserService : IUserService
         var user = getUser(id);
 
         // validate
-        if (model.Name != user.Name && _context.Users.Any(x => x.Name == model.Name))
-            throw new AppException("Nom '" + model.Name + "' est déjà inscrit !");
+        if (model.Name != user.Mail && _context.Users.Any(x => x.Mail == model.Mail))
+            throw new AppException("Adresse mail '" + model.Mail + "' est déjà utilisée !");
 
         // hash password if it was entered
         if (!string.IsNullOrEmpty(model.Password))

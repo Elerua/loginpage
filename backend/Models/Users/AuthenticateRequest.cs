@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 public class AuthenticateRequest
 {
     [Required]
-    public string Name { get; set; }
+    public string Mail { get; set; }
 
     [Required]
     public string Password { get; set; }
