@@ -129,7 +129,7 @@ const TableUser = () => {
 				<TablePagination
 					rowsPerPageOptions={[3, 5]}
 					component="div"
-					count={100}
+					count={dataAllUser.length}
 					rowsPerPage={rowsPerPage}
 					page={page}
 					onPageChange={handleChangePage}
