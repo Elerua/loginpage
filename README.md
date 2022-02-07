@@ -2,4 +2,4 @@
 
     .NET : BACKEND
     ReactJS/NodeJS : FRONTEND
-    MySQL : DATABASE
+    SQLite : DATABASE
